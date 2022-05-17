@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sl</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="Style/catalog.css">
+	<link rel="stylesheet" href="Style/Index.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner" id="header__inner">
+					<div id="header__menu" class="header__menu">
+						<nav class="header__nav">
+							<ul class="header__list" id="header__list">
+								<li class="header__list--item"><a href="newClothes.html" class="header__list--link">NEW</a></li>
+								<li class="header__list--item"><a href="catalog.html" class="header__list--link">Каталог</a>
+								</li>
+								<li class="header__list--item"><a href="aboutUs.html" class="header__list--link">О нас</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__logo" id="header__logo">
+						<a href="index.html">
+							<img src="photo/index/logo.svg" alt="">
+						</a>
+					</div>
+					<div id="header__dopmenu" class=" header__menu header__dopmenu">
+						<nav class="header__nav">
+							<ul class="header__list" id="header__drp--list">
+								<li class="header__list--items">
+									<a href="profile.html" id="likeitemsList" class="header__list--item">
+										<div class="header__item--photo">
+											<img class="header__item--icon" src="photo/index/Frame-1.svg" alt="">
+										</div>
+										<div class="header__list--info" id="header__list--info">
+											<p class="header__list--link">Избранное</p>
+										</div>
+									</a>
+								</li>
+								<li class="header__list--items">
+									<a href="basket.html" class="header__list--item">
+										<div class="header__item--photo">
+											<img class="header__item--icon" src="photo/index/Frame-2.svg" alt="">
+										</div>
+										<div class="header__list--info" id="header__list--info">
+											<p class="header__list--link">Корзина</p>
+										</div>
+									</a>
+								</li>
+								<li class="header__list--items">
+									<a href="profile.html" class="header__list--item">
+										<div class="header__item--photo">
+											<img class="header__item--icon" src="photo/index/Frame.svg" alt="">
+										</div>
+										<div class="header__list--info" id="header__list--info">
+											<p class="header__list--link">Профиль</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__burger" id="header__burger">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div id="CatologCheck" class="catolog--check">
+				<div class="container">
+					<div class="road">
+						<div class="road__page">
+							<a class="road__page--style" href="index.html">Главная /</a>
+						</div>
+						<div class="road__page">
+							<a class="road__page--style" href="catalog.html">Каталог</a>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="lsitclothes" id="lsitclothes">
+						<nav class="lsitclothes__items">
+							<ul class="lsitclothes__list">
+								<li class="lsitclothes__item"><button id="RoadItemClothesHody"
+										class="lsitclothes__item--button">Худи</button></li>
+								<li class="lsitclothes__item">/<button id="RoadItemClothesShirt"
+										class="lsitclothes__item--button">Рубашки</button></li>
+								<li class="lsitclothes__item">/<button id="RoadItemClothesTshirt"
+										class="lsitclothes__item--button">Футболки</button></li>
+								<li class="lsitclothes__item">/<button id="RoadItemClothesLong"
+										class="lsitclothes__item--button">Лонгсливы</button></li>
+								<li class="lsitclothes__item">/<button id="RoadItemClothesJacet"
+										class="lsitclothes__item--button">Пуховики</button></li>
+								<li class="lsitclothes__item">/<button id="RoadItemClothesJence"
+										class="lsitclothes__item--button">Джинсы</button></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="kalalogclothes" id="kalalogclothes">
+
+					<form class="filter" id="filter" action="">
+						<div class="fiter__burger">
+							<span id="fiter__burger--icon" class="fiter__burger--icon"></span>
+						</div>
+						<div id="filter__category--list" class="filter__category--list">
+							<div class="filter__size">
+								<div class="filter__title">
+									<h3 class="filter__title--size">Размеры</h3>
+								</div>
+								<div class="filter__list" id="FilterSizeList">
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="sizexs">
+										<label class="filter__item--check" for="sizexs">XS</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="sizes">
+										<label class="filter__item--check" for="sizes">S</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="sizem">
+										<label class="filter__item--check" for="sizem">M</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="sizel">
+										<label class="filter__item--check" for="sizel">L</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="sizexl">
+										<label class="filter__item--check" for="sizexl">XL</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="sizexxl">
+										<label class="filter__item--check" for="sizexxl">XXl</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__gender">
+								<div class="filter__title">
+									<h3 class="filter__title--gender">Пол</h3>
+								</div>
+								<div class="filter__list" id="FilterGenderList">
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="genderMen">
+										<label class="filter__item--check" for="genderMen">Мужской</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="genderWomen">
+										<label class="filter__item--check" for="genderWomen">Женский</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="genderUnisex">
+										<label class="filter__item--check" for="genderUnisex">Унисекс</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__color">
+								<div class="filter__title">
+									<h3 class="filter__title--color">Цвета</h3>
+								</div>
+								<div class="filter__list--color" id="FilterСolorList">
+									<div class="filter__item--color">
+										<input class="filter__item--input" type="checkbox" name="" id="ColorRed">
+										<label class="filter__color--check filter__color--red" for="ColorRed"></label>
+									</div>
+									<div class="filter__item--color">
+										<input class="filter__item--input" type="checkbox" name="" id="ColorBlack">
+										<label class="filter__color--check filter__color--black" for="ColorBlack"></label>
+									</div>
+									<div class="filter__item--color">
+										<input class="filter__item--input" type="checkbox" name="" id="ColorWhite">
+										<label class="filter__color--check filter__color--white" for="ColorWhite"></label>
+									</div>
+									<div class="filter__item--color">
+										<input class="filter__item--input" type="checkbox" name="" id="ColorGreen">
+										<label class="filter__color--check filter__color--green" for="ColorGreen"></label>
+									</div>
+									<div class="filter__item--color">
+										<input class="filter__item--input" type="checkbox" name="" id="ColorPurple">
+										<label class="filter__color--check filter__color--purple" for="ColorPurple"></label>
+									</div>
+									<div class="filter__item--color">
+										<input class="filter__item--input" type="checkbox" name="" id="ColorBlue">
+										<label class="filter__color--check filter__color--blue" for="ColorBlue"></label>
+									</div>
+									<div class="filter__item--color">
+										<input class="filter__item--input" type="checkbox" name="" id="ColorRainbow">
+										<label class="filter__color--check filter__color--rainbow" for="ColorRainbow"></label>
+									</div>
+									<div class="filter__item--color">
+										<input class="filter__item--input" type="checkbox" name="" id="ColorYellow">
+										<label class="filter__color--check filter__color--yellow" for="ColorYellow"></label>
+									</div>
+									<div class="filter__item--color">
+										<input class="filter__item--input" type="checkbox" name="" id="ColorGray">
+										<label class="filter__color--check filter__color--gray" for="ColorGray"></label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__type">
+								<div class="filter__title">
+									<h3 class="filter__title--type">Категории</h3>
+								</div>
+								<div class="filter__list" id="FilterTypeList">
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="Typezip">
+										<label class="filter__item--check" for="Typezip">На молнии</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="Typehoodie">
+										<label class="filter__item--check" for="Typehoodie">Худи</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="Typet-shirts">
+										<label class="filter__item--check" for="Typet-shirts">Футболки</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="TypeDownJacket">
+										<label class="filter__item--check" for="TypeDownJacket">Пуховики</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="TypeJeans">
+										<label class="filter__item--check" for="TypeJeans">Джинсы</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="TypeTurtlenecks">
+										<label class="filter__item--check" for="TypeTurtlenecks">Водолазки</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="TypeSkirts">
+										<label class="filter__item--check" for="TypeSkirts">Юбки</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="TypeDresses">
+										<label class="filter__item--check" for="TypeDresses">Платья</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="TypeShirts">
+										<label class="filter__item--check" for="TypeShirts">Рубашки</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="TypeLongSleeves">
+										<label class="filter__item--check" for="TypeLongSleeves">Лонгсливы</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="TypeSweatshirts">
+										<label class="filter__item--check" for="TypeSweatshirts">Тостовки</label>
+									</div>
+
+								</div>
+							</div>
+							<div class="filter__season">
+								<div class="filter__title">
+									<h3 class="filter__title--season">Сезон</h3>
+								</div>
+								<div class="filter__list" id="FilterSeasonList">
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="SeasonSummer">
+										<label class="filter__item--check" for="SeasonSummer">Лето</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="SeasonWinter">
+										<label class="filter__item--check" for="SeasonWinter">Зима</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="SeasonDemi">
+										<label class="filter__item--check" for="SeasonDemi">Демисезон</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="SeasonYearRound">
+										<label class="filter__item--check" for="SeasonYearRound">Кроглогодичный</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__composition">
+								<div class="filter__title">
+									<h3 class="filter__title--composition">Состав</h3>
+								</div>
+								<div class="filter__list" id="FilterCompositionList">
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="СompositionСotton">
+										<label class="filter__item--check" for="СompositionСotton">Хлопок</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="СompositionPolyester">
+										<label class="filter__item--check" for="СompositionPolyester">Полиэстер</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="СompositionWool">
+										<label class="filter__item--check" for="СompositionWool">Шерсть</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="СompositionDenim">
+										<label class="filter__item--check" for="СompositionDenim">Denim(деним)</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="СompositionLeather">
+										<label class="filter__item--check" for="СompositionLeather">Кожа</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="СompositionLeatherDeputy">
+										<label class="filter__item--check" for="СompositionLeatherDeputy">Кож-зам</label>
+									</div>
+									<div class="filter__item">
+										<input class="filter__item--input" type="checkbox" name="" id="СompositionNylon">
+										<label class="filter__item--check" for="СompositionNylon">Нейлон</label>
+									</div>
+								</div>
+							</div>
+							<div class="filter__send">
+								<input id="filtersubmit" class="filter__send--text" type="button" value="Применить">
+							</div>
+						</div>
+					</form>
+					<div class="kalalogclothes__items" id="katalog__list">
+					</div>
+				</div>
+			</div>
+			<div id="RegBlockCheck" class="registbg">
+				<div class="registbg__blur">
+					<div class="regist">
+						<div class="regist__back">
+							<a id="CloseReg" href="">
+								<img class="regist__back--photo" src="photo/katalog/Arrow.svg" alt="">
+							</a>
+						</div>
+						<div class="regist__content">
+							<form action="#" class="registr">
+								<div class="registr__name">
+									<div class="registr__reg">
+										<h2 class="registr__reg--style">РЕГИСТРАЦИЯ</h2>
+									</div>
+								</div>
+								<div class="registr__block">
+									<div class="registr__mail">
+										<div class="registr__title">
+											<p class="registr__title--style">Email</p>
+										</div>
+										<div class="registr__title">
+											<input type="email" class="payment__title--style"></input>
+										</div>
+									</div>
+									<div class="registr__name">
+										<div class="registr__title">
+											<p class="registr__title--style">ФИО</p>
+										</div>
+										<div class="registr__title">
+											<input type="text" class="payment__title--style"></input>
+										</div>
+									</div>
+									<div class="registr__password">
+										<div class="registr__title">
+											<p class="registr__title--style">ПАРОЛЬ</p>
+										</div>
+										<div class="registr__title">
+											<input type="password" class="payment__title--style"></input>
+										</div>
+									</div>
+								</div>
+								<div class="registr__input">
+									<input type="submit" class="registr__input--button" value="Зарегестрироваться"></input>
+								</div>
+							</form>
+							<form action="#" class="enter">
+								<div class="enter__name">
+									<div class="enter__entrance">
+										<h2 class="enter__entrance--style">ВХОД</h2>
+									</div>
+								</div>
+								<div class="enter__block">
+									<div class="enter__mail">
+										<div class="enter__title">
+											<p class="enter__title--style">E-MAIL</p>
+										</div>
+										<div class="registr__title">
+											<input id="CheckEmail" type="email" class="payment__title--style"></input>
+										</div>
+									</div>
+									<div class="enter__password">
+										<div class="enter__title">
+											<p class="enter__title--style">ПАРОЛЬ</p>
+										</div>
+										<div class="registr__title">
+											<input id="CheckPassword" type="password" class="payment__title--style"></input>
+										</div>
+									</div>
+								</div>
+								<div class="password">
+									<div class="password__forget">
+										<button class="password__forget--button">
+											Забыли пароль?
+										</button>
+									</div>
+								</div>
+								<div class="enter__come">
+									<input type="submit" id="ToComeIn" class="enter__come--button" value="Войти"></input>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer id="footer" class="footer">
+			<nav class="footer__nav">
+				<div class="footer__link">
+					<div class="footer__block">
+						<button class="footer__title" id="company__footer">КОМПАНИЯ</button>
+						<ul class="footer__list" id="company__list">
+							<li>
+								<a class="footer__item" href="">О нас
+								</a>
+							</li>
+							<li>
+								<a class="footer__item" href="">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__block">
+
+						<button class="footer__title" id="buyer__footer">ПОКУПАТЕЛЮ</button>
+
+						<ul class="footer__list" id="buyer__list">
+
+							<li>
+								<a class="footer__item" href="">Избранное
+								</a>
+							</li>
+							<li>
+								<a class="footer__item" href="">Каталог
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<ul class="footer__contacts">
+					<button class="footer__title">КОНТАКТЫ</button>
+
+					<li><a class="footer__item" href="tel:79514798806">+7(951)-479-88-06</a>
+					</li>
+					<li><a class="footer__item" href="mailto:slGrup@email.com">slGrup@email.com</a>
+					</li>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+	<script src="script/index.js"></script>
+	<script src="script/script.js"></script>
+</body>
+
+</html>
