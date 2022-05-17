@@ -1,0 +1,315 @@
+.catalog--content{
+	position: relative;
+}
+.catalog--content.noshow{
+display: none;
+}
+.lsitclothes__list {
+	display: flex;
+	justify-content: center;
+ }
+ 
+ .lsitclothes__item--button {
+	border: none;
+	background-color: #fff;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 200;
+	font-size: 20px;
+	line-height: 27px;
+	color: black;
+ }
+.newkalalogclothes__items{
+	display: flex;
+	flex-wrap: wrap;
+}
+.newkalalogclothes__items.hiden .newkalalogclothes__item {
+	display: none;
+ }
+.newkalalogclothes__title--style,
+.newkalalogclothes__prise--style {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 27px;
+  line-height: 30px;
+}
+.newkalalogclothes__item--photo {
+	margin: 13px 0 7px 0;
+}
+.newkalalogclothes__title--style,
+.newkalalogclothes__prise--style {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 27px;
+  line-height: 30px;
+}
+.newkalalogclothes__item {
+	width: 22.6%;
+	padding: 15px;
+	margin: 8px 8px;
+ 
+	border: 1px solid #c4c4c4;
+	border-radius: 15px;
+	max-height: 500px;
+	cursor: pointer;
+	box-sizing: border-box;
+} 
+@media (max-width: 992px) {
+	.newkalalogclothes__item {
+	  width: 30%;
+	}
+ }
+ @media (max-width: 768px) {
+	.lsitclothes__list {
+	  flex-wrap: wrap;
+	}
+	.lsitclothes__item {
+	  white-space: nowrap;
+	}
+}
+@media (max-width: 576px) {
+	.newkalalogclothes__item {
+		width: 43%;
+	 }
+}
+.modalwindow {
+	position: absolute;
+	left: 0;
+	background-color: #fff;
+	width: 100%;
+ }
+ .modalwindow__content {
+	display: flex;
+	justify-content: center;
+ }
+ .modalwindow__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+ 
+ }
+ .modalwindow__title--style {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 33px;
+	line-height: 35px;
+ }
+ .modalwindow__prises--style {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 27px;
+	line-height: 35px;
+ }
+ .ModalwindowBack {
+	width: 30px;
+	margin: 0 0 0 20px;
+ }
+ .modalwindow__photo {
+	width: 45%;
+	display: flex;
+ }
+ .modalwindow__photo--small {
+	width: 32.4%;
+	margin: 0 5px 0 0;
+ }
+ .modalwindow__photo--big {
+	width: 65.4%;
+ }
+ .modalwindow__sizes {
+	width: 400px;
+ }
+ .modalwindow__size {
+	border: 1px solid #8e8e8c;
+	margin: 20px 12px 25px 12px;
+	width: 60px;
+	padding: 7px;
+	border-radius: 15px;
+	cursor: pointer;
+ }
+ .Modalkatalog__item--input {
+	display: none;
+ }
+ .Modalkatalog__item--input:checked + .modalwindow__size{
+	 background-color: green;
+ }
+ .Modalkatalog__item--label {
+	padding: 0 0 0 10px;
+ }
+ .modalwindow__size--style {
+	border: 1px solid #8e8e8c;
+	padding: 5px 10px;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 19px;
+	line-height: 25px;
+ }
+ .modalwindow__size--List {
+	transform: scale(0);
+	display: flex;
+ }
+ .modalwindow__size--title.hiden ~ .modalwindow__size--List {
+	transform: scale(1);
+	transition: transform 0.2s ease 0s;
+	justify-content: center;
+ }
+ .modalwindow__add {
+	display: flex;
+	justify-content: space-between;
+ }
+ .modalwindow__add--item {
+	width: 48%;
+ }
+ .modalwindow__add--button {
+	width: 100%;
+	padding: 5px 10px;
+	border: 1px solid #8e8e8c;
+	background-color: #fff;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 19px;
+	line-height: 25px;
+ }
+ .modalwindow__like--button{
+	 width: 100%;
+	 padding: 5px 10px;
+	 border: 1px solid #8e8e8c;
+	 background-color: #fff;
+	 font-family: "Raleway";
+	 font-style: normal;
+	 font-weight: 300;
+	 font-size: 19px;
+	 line-height: 25px;
+ }
+ .modalwindow__add--button:hover{
+	 background-color: rgb(30%, 30%, 30%, 0.1);
+ }
+ .modalwindow__like--button:hover{
+	 background-color: rgb(30%, 30%, 30%, 0.1);
+ }
+ 
+ .modalwindow__description--prase {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 23px;
+	line-height: 25px;
+ }
+ .modalwindow__composition--style {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 23px;
+ } 
+ @media (max-width:994px) {
+	 .modalwindow{
+		 top: 0;
+		 z-index: 1;
+	 }
+	 .modalwindow__content{
+		 display: block;
+		 max-width: calc(100vw - 150px);
+		 margin: 0 auto;
+		 position: relative;
+		 padding-top: 50px;
+	 }
+	 .modalwindow__title{
+		 width: fit-content;
+		 height: 35px;
+		 min-width: 137px;
+		 max-width: 500px;
+		 margin: auto;
+		 position: absolute;
+		 top: 0;
+		 left: 0;
+		 right: 0;
+	 }
+	 .modalwindow__photo{
+		 width: 100%;
+	 }
+	 .modalwindow__prises{
+		 margin: 0 auto;
+	 }
+	 .modalwindow__sizes{
+		 width: 100%;
+	 }
+	 .modalwindow__size--style{
+		 margin: 0 auto;
+	 }
+	 .modalwindow__size {
+		 margin: 12px 15px 12px 15px;
+		}
+	 .modalwindow__composition{
+		 display: flex;
+		 flex-wrap: wrap;
+	 }
+	 .modalwindow__composition--text{
+		 width: 50%;
+		 display: flex;
+	 }
+	 .modalwindow__description{
+		 display: flex;
+		 flex-direction: column;
+		 align-items: center;
+		 margin: 30px 0 30px 0;
+	 }
+	 .modalwindow__description--name{
+		 margin: 10px 0 20px 0;
+	 }
+ }
+ @media (max-width:767px) {
+	 .modalwindow__content{
+		 max-width: calc(100vw - 100px);
+	 }
+ }
+ @media (max-width: 576px) {
+	 .modalwindow__content{
+		 max-width: calc(100vw - 50px);
+	 }
+ }
+ @media (max-width: 430px) {
+	 .modalwindow__content{
+		 max-width: calc(100vw - 25px);
+	 }
+	 .modalwindow__size {
+	  margin: 12px 10px 12px 10px;
+	 }
+	 .modalwindow__add{
+		 flex-direction: column;
+		 align-items: center;
+	 }
+	 .modalwindow__add>div:nth-child(1){
+		 width: 100%;
+		 margin: 5px 0;
+	 }
+	 .modalwindow__add>div:nth-child(2){
+		 width: 85%;
+		 margin: 5px 0;
+	 }
+	 .modalwindow__composition{
+		 display: block;
+	 }
+	 .modalwindow__composition--text{
+		 width: 100%;
+	 }
+	 .modalwindow__description{
+		 margin: 10px 0 30px 0;
+	 }
+ }
+ @media (max-width: 430px) {
+	 .modalwindow__size--List{
+		 flex-wrap: wrap;
+	 }
+	 .modalwindow__size{
+		 width: 20%;
+		 display: flex;
+		 justify-content: center;
+ 
+	 }
+ }

@@ -1,0 +1,220 @@
+.bastet{
+	margin: 10px 0;
+	border-top: 1px solid #4c4c44 ;
+}
+.basketitem{
+	display: flex;
+   justify-content: space-evenly;
+	align-items: center;
+	border-bottom: 1px solid #4c4c44;
+	padding: 10px 0 10px 0;
+}
+.basketitem__photo{
+	width: 100px;
+}
+.basketitem--style{
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 19px;
+	line-height: 20px;
+}
+.basketitem__button--remove{
+	font-family: "Raleway";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    border: 1px solid #4c4c44;
+    border-radius: 8px;
+    padding: 5px 10px;
+    background-color: #fff;
+    transform: scale(0);
+}
+.basketitem__button--remove:hover{
+	background-color: rgb(241, 181, 181);
+}
+.basketitem:hover .basketitem__button--remove{
+	transform: scale(1);
+}
+.container__basket--info{
+	/* width: 100px; */
+}
+.payment__photo{
+	width: 40px;
+}
+.payment__name{
+	padding: 0 30px 0 30px;
+}
+.payment__choise{
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 25px;
+	color: #252525;
+}
+.payment__block{
+	display: flex;
+	margin: 11px 0 31px 0;
+}
+.payment__title{
+	margin: 0 0 20px 0;
+}
+.payment__sum{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0 10px 0;
+}
+.payment__order{
+	display: flex;
+	justify-content: space-between;
+}
+.payment__total{
+	display: flex;
+	justify-content: space-between;
+	margin: 34px 0 0 0;
+}
+.payment__prise{
+	margin: 0 0 28px 0;
+}
+.payment__order--button{
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 20px;
+	border: none;
+	padding: 11px 25px 11px 25px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+
+.enter__name{
+	border-top: 1px solid black;
+}
+.enter__entrance{
+	margin: 50px 0 30px 0;
+}
+.enter__title{
+	margin: 0 5px 0px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.enter__title--img{
+	width: 25px;
+}
+.password__forget{
+	margin: 0 0 25px 0;
+
+}
+.password__forget--style{
+	border-bottom: 1px solid black;
+}
+.enter__come--button{
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 20px;
+	border: none;
+	padding: 11px 25px 11px 25px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.registr__reg--style{
+  	font-family: "Raleway";
+ 	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 20px;
+}
+.enter__entrance--style{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+}
+.registr__title--style{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+}
+.password__forget--button{
+  border: none;
+  background-color: #fff;
+  border-bottom: 1px dashed #4c4c4c;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+}
+.payment__title{
+	border-bottom: 1.5px solid #4c4c4c;
+
+}
+.payment__name--style{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 2px 7px;
+}
+.buttonlist__error--text{
+	font-family: "Raleway";
+   font-style: normal;
+   font-weight: 300;
+   font-size: 21px;
+   line-height: 25px;
+}
+.buttonlist__link{
+	background-color: #8e8e8c;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+	padding: 11px;
+	width: fit-content;
+}
+.buttonlist__text--link{
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 25px;
+	line-height: 30px;
+	color: #ffffff;
+}
+.payment.hide{
+display: none;
+}
+@media (max-width: 576px) {
+	.basketitem{
+		position: relative;
+		flex-wrap: wrap;
+	}
+	.basketitem__photo{
+		width: 20%;
+	}
+	.basketitem__name{
+		width: 20%;
+	}
+	.basketitem__size{
+		width: 20%;
+		text-align: center;
+	}
+	.basketitem__prise{
+		width: 20%;
+	}
+	.basketitem__button--block{
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+
+	}
+}
+
